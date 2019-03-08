@@ -1,0 +1,78 @@
+
+@base:75rem;
+@titleColor:#ff841d;
+@borderColor:#f1f1f1;
+
+
+.m_main{
+    // height: 1000px;
+
+    ul{
+        overflow: hidden;
+        padding-bottom: 70/@base;
+        li{
+            height: 540/@base;
+            width: 50%;
+            border: 1/@base solid @borderColor;
+            padding: 40/@base;
+            float: left;
+            a{ 
+                .imgBox{
+                    width: 100%;
+                    height: 285/@base;
+                    // background-color: #f99;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .tit{
+                    height: 71/@base;
+                    margin-top: 24/@base;
+                    p{
+                        line-height: 36/@base;
+                        font-size: 26/@base;
+                        color: #070105;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        /*设置成弹性盒子 */
+                        display: -webkit-box;
+                        /*显示的个数 */
+                        -webkit-line-clamp: 2;
+                        /* 属性规定框的子元素应该被水平或垂直排列。 */
+                        -webkit-box-orient: vertical;
+
+                    }
+                }
+                .price{
+                    line-height: 45/@base;
+                    font-size: 26/@base;
+                    color: #ff5209;
+
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    /*设置成弹性盒子 */
+                    display: -webkit-box;
+                    /*显示的个数 */
+                    -webkit-line-clamp: 1;
+                    /* 属性规定框的子元素应该被水平或垂直排列。 */
+                    -webkit-box-orient: vertical;
+
+                }
+                .from{
+                    color: #c8c8ee;
+                    font-size: 22/@base;
+                }
+            }
+    
+    
+    
+        }
+    }
+
+
+
+}
+
+
+

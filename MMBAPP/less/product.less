@@ -1,0 +1,200 @@
+@base:75rem;
+@titleColor:#ff841d;
+@borderColor:#c9c9c9;
+.red{
+    color: #cd0000;
+}
+
+
+.m_main{
+
+    //   height: 2000px;
+    /*路径导航*/
+    .nav {
+        width: 100%;
+        height: 78/@base;
+        // line-height: 78/@base;
+        border-top: 2px solid @borderColor;
+        border-bottom: 2px solid @borderColor;
+        padding-left: 16/@base;
+        a{
+            display: block;
+            float: left;        
+            height: 74/@base;
+            line-height: 74/@base;
+            font-size: 24/@base;
+        }
+    }
+
+
+    /*商品详情*/
+    .content{
+        p{
+            line-height: 46/@base;
+            margin-top: 38/@base;// 38/@base 0 38/@base
+            margin-left: 38/@base;
+            width: 673/@base;
+            font-size: 32/@base;
+            text-align: center;
+        }
+        .imgBox{
+            width: 340/@base;
+            height: 340/@base;
+            img{
+                width: 100%;
+                height: 100%;
+                margin-left: 206/@base;
+            }
+        }
+        .detail{
+            height: 68/@base;
+            border-top: 2px solid #bd5538;
+            border-bottom: 2px solid #bd5538;
+            :nth-child(2){
+                border-left: 2px solid #bd5538;
+                border-right: 2px solid #bd5538;
+            }
+             li{
+                 width: 33.3%;
+                 height: 100%;
+                 float: left;
+                 text-align: center;
+                 line-height: 64/@base;
+                 font-size: 26/@base;
+                 background-color:#ff9916;
+                 a{
+                     color: #fffae9;        
+                 }
+             }
+        }
+        table{
+            height: 90/@base;
+            border-bottom: 2px solid @borderColor;
+            line-height: 90/@base;
+            font-size: 30/@base;
+            font-weight: 700;
+            a{
+                text-align: left;
+                img{
+                    margin-top: 33/@base;
+                    // margin-left: 45/@base;
+                    width: 34/@base;
+                    height: 34/@base;
+                }
+            }
+            td{
+                &.p_pic a{
+
+                    text-align: right;
+                }
+                &.red{
+                    text-align: right;
+                }
+                span{
+                    // display: block;
+                    width: 112/@base;
+                    height: 48/@base;
+                }
+            }
+        }
+        .notice{
+            height: 114/@base;
+            
+            overflow: hidden;
+            p{  
+                margin-top: 20/@base;
+                padding:0 20/@base;
+                font-size: 22/@base;
+                line-height: 36/@base;
+                color: #a5a5a5;
+            }
+        }
+
+    }
+
+
+    /*分割线*/
+    .line{
+        width: 750/@base;
+        height: 8/@base;
+        background-color: #676767;
+    }
+
+
+    /*商品评论*/
+    .commentList{
+        .title{
+            width: 750/@base;
+            height: 66/@base;
+            line-height: 66/@base;
+            text-align: center;
+            background-color: #dbdbdb;
+            font-size: 24/@base;
+            color: #191416;
+        }
+        .comment{
+            padding: 32/@base 20/@base 12/@base;
+            border-bottom: 2px solid #d0d0d0;
+            .user{
+                overflow: hidden;
+                line-height: 24/@base;
+                font-size: 18/@base;
+                color: #6c7072;
+                span:first-child{
+                    float: left;
+                }
+                span:last-child{
+                    float: right;
+                }
+            }
+            .from{
+                text-align: right;
+                line-height: 40/@base;
+                color: #6c7072;
+                font-size: 22/@base;
+            }
+            .comContent {
+                line-height: 40/@base;
+                font-size: 22/@base;
+            }
+
+        }
+
+
+    }
+
+
+    /*商品评论*/
+    .seeMore{
+        height: 146/@base;
+        width: 750/@base;
+        overflow: hidden;
+        a{
+            width: 718/@base;
+            height: 66/@base;
+            background-color: #e5e5e5;
+            margin-left: 16/@base;
+            margin-top: 31/@base;
+            border-radius: 5/@base;
+            text-align: center;
+            line-height:66/@base;
+            font-size: 26/@base;
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

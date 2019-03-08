@@ -1,0 +1,57 @@
+.m_main {
+  /*路径导航*/
+  /*品牌排行*/
+}
+.m_main .nav {
+  width: 100%;
+  height: 1.04rem;
+  border-top: 2px solid #c9c9c9;
+  border-bottom: 2px solid #c9c9c9;
+  padding-left: 0.21333333rem;
+}
+.m_main .nav a {
+  display: block;
+  float: left;
+  height: 0.98666667rem;
+  line-height: 0.98666667rem;
+  font-size: 0.32rem;
+}
+.m_main .brandRanking {
+  height: 1.6rem;
+  width: 100%;
+  font-size: 0.4rem;
+  color: #7c340a;
+  padding: 0.26666667rem 0.13333333rem;
+}
+.m_main .brandRanking div {
+  width: 100%;
+  height: 100%;
+  line-height: 1.01333333rem;
+  background-color: #eeeeee;
+  border: 2px solid #c4c4c4;
+  padding-left: 0.24rem;
+}
+.m_main .classifyTitle {
+  border-radius: 0.13333333rem;
+  overflow: hidden;
+  margin-bottom: 0.66666667rem;
+}
+.m_main .classifyTitle .list a {
+  height: 1.06666667rem;
+  width: 100%;
+  line-height: 1.06666667rem;
+  padding: 0 0.45333333rem;
+  border-bottom: 2px solid #cccccc;
+  background-color: #ededed;
+}
+.m_main .classifyTitle .list a span {
+  color: #060003;
+  font-size: 0.45333333rem;
+  margin-top: 0.30666667rem;
+  margin-top: 0.26666667rem;
+}
+.m_main .classifyTitle .list a i {
+  float: right;
+  margin-top: 0.33333333rem;
+  font-size: 0.48rem;
+}

@@ -1,0 +1,120 @@
+.current {
+  border-bottom: 3px solid #f4483e;
+}
+.m_main {
+  /**导航部分*/
+  /*内容部分*/
+}
+.m_main .nav {
+  height: 1.01333333rem;
+  width: 100%;
+  padding-bottom: 0.05333333rem;
+  overflow: hidden;
+}
+.m_main .nav ul {
+  height: 1.01333333rem;
+  width: 1000px;
+}
+.m_main .nav ul li {
+  float: left;
+  padding: 0 0.32rem;
+}
+.m_main .nav ul li a {
+  width: 100%;
+  height: 1.01333333rem;
+  line-height: 1.01333333rem;
+  font-size: 0.33333333rem;
+  color: #f4483e;
+}
+.m_main .content {
+  border-bottom: 0.8rem solid #f7f7f7;
+}
+.m_main .content .contentList {
+  height: 4rem;
+  padding: 0.24rem 0.13333333rem 0 3.73333333rem;
+  position: relative;
+}
+.m_main .content .contentList .imgBox {
+  position: absolute;
+  top: 0.24rem;
+  left: 0.13333333rem;
+  width: 3.46666667rem;
+  height: 3.46666667rem;
+}
+.m_main .content .contentList .tit {
+  line-height: 0.56rem;
+  font-size: 0.32rem;
+  color: #000000;
+}
+.m_main .content .contentList .price {
+  margin-top: 0.24rem;
+  color: #fc353a;
+  font-size: 0.42666667rem;
+}
+.m_main .content .contentList .price i {
+  font-size: 0.4rem;
+}
+.m_main .content .contentList .price em {
+  font-size: 0.24rem;
+  font-style: normal;
+  margin: 0 0.06666667rem;
+}
+.m_main .content .contentList .price del {
+  font-size: 0.24rem;
+  color: #abb3b8;
+  margin-left: 0.26666667rem;
+}
+.m_main .content .contentList div.bar {
+  position: absolute;
+  bottom: 1.06666667rem;
+  left: 3.73333333rem;
+}
+.m_main .content .contentList div.bar i {
+  width: 2.18666667rem;
+  height: 0.37333333rem;
+  line-height: 0.26666667rem;
+  text-align: center;
+  background-color: #ffb7b7;
+  border: 0.04rem solid #fb060a;
+  border-radius: 0.18666667rem;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.m_main .content .contentList div.bar i em {
+  display: block;
+  height: 100%;
+  background-color: #fc353a;
+  float: left;
+}
+.m_main .content .contentList div.bar i span {
+  font-size: 0.24rem;
+  line-height: 0.26666667rem;
+}
+.m_main .content .contentList div.bar b {
+  font-size: 0.32rem;
+  color: #fc353a;
+  vertical-align: middle;
+}
+.m_main .content .contentList .link {
+  position: absolute;
+  top: 2.93333333rem;
+  left: 3.73333333rem;
+  width: 6.13333333rem;
+}
+.m_main .content .contentList .link a:first-child {
+  float: left;
+  line-height: 0.64rem;
+  text-align: center;
+  border: 2px dashed #e22d31;
+  font-size: 0.32rem;
+  color: #e22d31;
+}
+.m_main .content .contentList .link a:last-child {
+  float: right;
+  text-align: center;
+  line-height: 0.73333333rem;
+  font-size: 0.32rem;
+  color: #fff;
+  background-color: #e22d31;
+  border-radius: 0.13333333rem;
+}

@@ -1,0 +1,136 @@
+@base:75rem;
+
+
+
+.m_main{
+    
+    //标题部分
+    .nav{
+        width: 100%;
+        height: 76/@base;
+        position: relative;
+        padding-right: 90/@base;
+        // background-color: #f99;
+        border-bottom: 2/@base solid #dadada;
+        ul{
+            overflow: hidden;
+            height: 100%;
+            border-right: 2px  solid #d8e5ee;
+            font-size: 30/@base;
+            li{
+                float: left;
+                height: 100%;
+                line-height: 74/@base;
+                text-align: center;
+                span{
+                    padding-right: 10/@base;
+                }
+            }
+            .shopName{
+                width: 170/@base;
+                
+            }
+            .areaid{
+                width: 218/@base;
+            }
+            .price{
+                width: 248/@base;
+            }
+        }
+
+        .icon_left{
+            width: 50/@base;
+            height: 50/@base;
+            background: url('../images/icon_bar.png') -21/@base -107/@base;
+            background-size: 440/@base 264/@base;
+            position: absolute;
+            top: 13/@base;
+            right: 20/@base;
+        }
+        .icon_right{
+            width: 40/@base;
+            height: 40/@base;
+            background: url('../images/icon_bar.png') -25/@base -20/@base;
+            background-size: 440/@base 264/@base;
+            background-color: #fff;
+            position: absolute;
+            top: 10/@base;
+            right: 12/@base;
+        }
+        
+
+    }
+
+    //下拉菜单部分
+    .dropDown{
+        ul{
+            display: none; 
+            font-size: 28/@base;
+            li{
+                width: 100%;
+                height: 76/@base;
+                line-height: 76/@base;
+                // position: relative;
+                padding: 0 20/@base;
+                border-bottom: 2/@base solid #dadada;
+                i{
+                    float: right;
+                    color: transparent;
+                    &.show{
+                        color: #ff841d;
+                    }
+                }
+            }
+        }
+
+        
+    }
+
+
+    // 内容部分
+    .content{
+        // height: 1000px;
+        overflow: hidden;
+        border: 8/@base solid #f1f1f1;
+        border-bottom: 60/@base solid #f1f1f1;
+
+        ul{
+            .contentList{
+                width: 50%;
+                height: 472/@base;
+                border: 8/@base solid #f1f1f1;
+                float: left;
+                padding:0 10/@base;
+                img{
+                    height: 350/@base;
+
+                }
+                .tit{
+                    overflow:hidden;//超出隐藏
+                    white-space:nowrap;//强制不换行
+                    font-size: 24/@base;
+                }
+                .price{
+                    line-height: 45/@base;
+                    font-size: 26/@base;
+                    color: #f95601;
+                    a{
+                        width: 124/@base;
+                        height: 45/@base;
+                        line-height: 45/@base;
+                        text-align: center;
+                        float: right;
+                        font-size: 24/@base;
+                        color: #fff;
+                        background-color: #ff9501;
+                        border-radius: 10/@base;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+
+}

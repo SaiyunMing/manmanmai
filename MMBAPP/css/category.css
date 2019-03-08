@@ -1,0 +1,41 @@
+.m_main ul .list div {
+  height: 1.06666667rem;
+  width: 100%;
+  line-height: 1.06666667rem;
+  padding: 0 0.45333333rem;
+  border-bottom: 2px solid #f1f1f1;
+  background-color: #ededed;
+}
+.m_main ul .list div span {
+  color: #060003;
+  font-size: 0.45333333rem;
+  margin-top: 0.30666667rem;
+}
+.m_main ul .list div i {
+  float: right;
+  margin-top: 0.33333333rem;
+  font-size: 0.48rem;
+}
+.m_main ul .list ul {
+  overflow: hidden;
+  display: none;
+}
+.m_main ul .list ul.show {
+  display: block;
+}
+.m_main ul .list ul li {
+  float: left;
+  height: 1.06666667rem;
+  width: 33.3%;
+}
+.m_main ul .list ul li a {
+  width: 100%;
+  height: 100%;
+  color: #050c2e;
+  text-align: center;
+  line-height: 1.06666667rem;
+  box-sizing: border-box;
+  border-right: 2px solid #f1f1f1;
+  border-bottom: 2px solid #f1f1f1;
+  background-color: #f9f9f9;
+}

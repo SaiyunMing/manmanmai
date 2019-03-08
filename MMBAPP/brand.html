@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/brand.css">
+    <title>Document</title>
+    <script src="./lib/flexible/flexible.js"></script>
+    
+</head>
+
+<body>
+    <div class="m_header">
+        <div class="top">
+            <a href="index.html" class="icon_left">
+                <img src="images/header_logo.png" alt="">
+            </a>
+            <i class="icon_right">
+                <img src="images/header_app.png" alt="">
+            </i>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="请输入您想比价的商品">
+            <button>搜索</button>
+        </div>
+    </div>
+
+    <!-- /*---------------主体------------*/ -->
+    <div class="m_main">
+         <!-- 路径导航 -->
+         <div class="nav">
+            <!-- 挖个坑 -->
+            <a href="index.html">首页 &gt;</a>
+            <a href="brandTitle.html">全部分类 &gt;</a>
+            <!-- <a href="tvList.html?{{v.categoryId}}">{{v.category}} &gt;</a> -->
+        </div>
+
+        <!-- 品牌排行标题 -->
+        <div class="brandRanking">
+            <div>热门品牌排行</div>
+        </div>
+        <!-- 品牌排行 -->
+        <ul class="brandList">
+        <!-- 挖个坑 -->
+        </ul>
+
+
+        <!-- 销量排行标题 -->
+        <div class="brandRanking">
+            <div>平板电视产品销量排行</div>
+        </div>
+        <!-- 销量排行 -->
+        <ul class="content">
+                <!-- 挖个坑 -->
+        </ul>
+
+        <!-- 销量排行商品的评论 -->
+        <div class="brandRanking">
+            <div id="commentTit">平板电视最新评论</div>
+        </div>
+        <div class="comment">
+                <!-- 挖个坑 -->
+        </div>
+    </div>
+
+
+    <!----------------底部-------------->
+    <div class="m_footer">
+        <div class="top">
+            <div class="login"><a href="#">登录</a></div>
+            <div class="reg"><a href="#">注册</a></div>
+            <div class="backTop"><a href="#">
+                    <img src="./images/top.jpg" alt="">
+                    <span>返回顶部</span></a>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>
+                <a href="#">手机APP下载</a>
+                <span>慢慢买手机版</span>
+                <span>--掌上比价平台</span>
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- 品牌排行模板 -->
+    <script type="text/html" id="brandListTpl">
+        {{each result v i}}
+            <li data-brandtitleid='{{v.brandtitleid}}'><a href="javascript:;">
+                <i class="icon_left">{{i + 1}}</i>
+                <i class="icon_right"></i>
+                <p class="tit">{{v.brandName}}</p>
+                <p class="sales ">{{v.brandInfo}}</p>
+            </a></li>
+        
+        {{/each}}
+    </script>
+
+    <!-- 销量排行模板 -->
+    <script type="text/html" id="salesTpl">
+        {{each result v i }}
+            <li  class="list" data-categoryId={{v.categoryId}} data-productid={{v.productId}}>
+                <a href="#commentTit">
+                    <div>
+                        <p>{{v.productName}}</p>
+                        <p class="price">{{v.productPrice}}</p>
+                        <span>{{v.productQuote}}</span>
+                        <span>{{v.productCom}}</span>
+                    </div>
+                    <div class='imgBox'>{{@v.productImg}}</div>
+                </a>
+                
+            </li>
+        {{/each}}
+    </script>
+
+
+    <!-- 销量排行商品的评论模板 -->
+    <script type="text/html" id="commentTpl">
+        {{each result v i }}
+        <div class="commentList">
+            <div  class="list" >
+                <div>
+                    <p>乐视TV(Letv) 超3 X55 55英寸智能LED液晶 超级电视 4K超清电视</p>
+                </div>
+                <div class='imgBox'><img src="http://pro.zuyushop.com:8015/ProPic/201510/Thumb/Thumb_201510001104382491.jpg" alt=""> </div>
+            </div>
+            <!-- 三角形 -->
+            
+            <div class='commentBox'>
+                <p class='time'><span>{{v.comName}}</span><span>{{v.comTime}}</span></p>
+                {{v.comContent}}</div>
+        </div>
+        {{/each}}
+    </script>
+
+
+
+
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/Template/template-web.js"></script>
+    <script src="./js/brand.js"></script>
+
+</body>
+
+</html>

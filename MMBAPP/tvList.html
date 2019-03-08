@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/tvList.css">
+    <title>Document</title>
+    <script src="./lib/flexible/flexible.js"></script>
+</head>
+
+<body>
+    <!----------------顶部-------------->
+    <div class="m_header">
+        <div class="top">
+            <a href="index.html" class="icon_left">
+                <img src="images/header_logo.png" alt="">
+            </a>
+            <i class="icon_right">
+                <img src="images/header_app.png" alt="">
+            </i>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="请输入您想比价的商品">
+            <button>搜索</button>
+        </div>
+    </div>
+
+
+    <!-- ----------主体---------- -->
+
+    <div class="m_main">
+
+        <!-- 路径导航 -->
+        <div class="nav">
+            <!-- 挖个坑 -->
+
+        </div>
+
+        <!-- 内容 -->
+        <div class="content">
+            <!-- 挖个坑 -->
+
+        </div>
+
+        <!-- 分页 -->
+        <div class="Pagination">
+            <button class="prev fl">上一页</button>
+            <div  class="page">
+                <span></span>
+                <i class="fa fa-angle-down"></i>
+                <!-- <i>1</i>
+                <i>2</i> -->
+            </div>
+            <button class="next fr">下一页</button>
+        </div>
+
+    </div>
+
+
+    <!----------------底部-------------->
+    <div class="m_footer">
+        <div class="top">
+            <div class="login"><a href="login.html">登录</a></div>
+            <div class="reg"><a href="reg.html">注册</a></div>
+            <div class="backTop"><a href="#">
+                    <img src="./images/top.jpg" alt="">
+                    <span>返回顶部</span></a>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>
+                <a href="#">手机APP下载</a>
+                <span>慢慢买手机版</span>
+                <span>--掌上比价平台</span>
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- 路径导航模板 -->
+    <script type="text/html" id="navTpl">
+        {{each result v i}}
+            <a href="index.html">首页 &gt;</a>
+            <a href="category.html">全部分类 &gt;</a>
+            <a href="tvList.html?{{v.categoryId}}">{{v.category}} &gt;</a>
+        {{/each}}
+    </script>
+
+    <!-- 内容模板product.html?productId={{v.productId}} -->
+    <script type="text/html" id="contentTpl">
+        {{each result v i }}
+            <a href="javascript:;" class="list" data-categoryId={{v.categoryId}} data-productId={{v.productId}}>
+                <div>
+                    <p>{{v.productName}}</p>
+                    <p class="price">{{v.productPrice}}</p>
+                    <span>{{v.productQuote}}</span>
+                    <span>{{v.productCom}}</span>
+                </div>
+                {{@v.productImg}}
+            </a>
+        {{/each}}
+    </script>
+
+
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/Template/template-web.js"></script>
+    <script src="./js/tvList.js"></script>
+
+</body>
+
+</html>

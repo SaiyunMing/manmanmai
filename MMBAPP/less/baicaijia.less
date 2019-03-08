@@ -1,0 +1,173 @@
+
+@base:75rem;
+@titleColor:#f4483e;
+@borderColor:#f1f1f1;
+
+.current{
+    border-bottom: 3px solid @titleColor;
+
+}
+
+.m_main{
+
+    /**导航部分*/
+    .nav{
+        height: 76/@base;
+        width: 100%;
+        padding-bottom: 4/@base;
+        // background-color: #f99;
+        overflow: hidden;
+        ul{
+            height: 76/@base;
+            width: 1000px;
+           
+            li{
+                float: left;
+                padding: 0 24/@base;
+                a{
+                    width: 100%;
+                    height: 76/@base;
+                    line-height: 76/@base;
+                    font-size: 25/@base;
+                    color: @titleColor;
+                    
+                }
+            }
+
+
+        }
+
+
+    }
+
+
+    /*内容部分*/
+    .content{
+        // padding-bottom: 60/@base;
+        // background-color: #f7f7f7;
+        border-bottom: 60/@base solid #f7f7f7;
+        .contentList{
+            height: 300/@base;
+            padding: 18/@base 10/@base 0 280/@base;
+            position: relative;
+            .imgBox{
+                position: absolute;
+                top: 18/@base;
+                left: 10/@base;
+                width: 260/@base;
+                height: 260/@base;
+                // background-color: #f99 ;
+                img{
+                    
+                }
+            }
+            .tit{
+                line-height: 42/@base;
+                font-size: 24/@base;
+                color: #000000;
+            }
+            .price{
+                margin-top: 18/@base;
+                color: #fc353a;
+                font-size: 32/@base;
+                i{
+                    font-size: 30/@base ;
+                }
+                em{
+                    font-size: 18/@base;
+                    font-style:normal;
+                    margin: 0 5/@base;
+                }
+                del{
+                    font-size: 18/@base;
+                    color: #abb3b8;
+                    margin-left: 20/@base;
+                }
+            }   
+
+            div.bar{
+                position: absolute;
+                bottom: 80/@base;
+                left: 280/@base;
+                // display: inline;
+                // margin-top: 20/@base;
+                a{
+                    
+                }
+                i{
+                    width: 164/@base;
+                    height: 28/@base;
+                    line-height: 20/@base;
+                    text-align: center;
+                    background-color: #ffb7b7;
+                    border: 3/@base solid #fb060a;
+                    border-radius: 14/@base;
+                    overflow: hidden;
+                    vertical-align: middle;
+                    em{
+                        display: block;
+                        height: 100%;
+                        background-color: #fc353a;
+                        float: left;
+                    }
+                    span{
+                        font-size: 18/@base;
+                        line-height: 20/@base;
+                    }
+                }
+                b{
+                    font-size: 24/@base;
+                    color: #fc353a;
+                    vertical-align: middle;
+                }
+            }
+
+            .link{
+                // margin-top: 14/@base;
+                position: absolute;
+                top: 220/@base;
+                left: 280/@base;
+                width: 460/@base;
+
+                a:first-child{
+                    float: left;
+                    // width: 216/@base;
+                    // height: 52/@base;
+                    
+                    line-height: 48/@base;
+                    text-align: center;
+                    border: 2px dashed #e22d31;
+                    font-size: 24/@base;
+                    color: #e22d31;
+                    
+                }
+                a:last-child{
+                    float: right;
+                    // width: 116/@base;
+                    // height: 55/@base;
+                    text-align: center;
+                    line-height: 55/@base;
+                    font-size: 24/@base;
+                    color: #fff;
+                    background-color: #e22d31;
+                    border-radius: 10/@base;
+                    
+                }
+            }   
+
+        }
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+}

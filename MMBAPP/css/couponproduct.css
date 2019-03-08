@@ -1,0 +1,95 @@
+/*公共类  禁止点击*/
+.notclick {
+  pointer-events: none;
+}
+.m_header .top {
+  background-color: #f4483e;
+}
+.m_main {
+  /*内容部分*/
+  /*模态框*/
+}
+.m_main .content {
+  border-bottom: 0.8rem solid #f7f7f7;
+}
+.m_main .content .contentList {
+  height: 4rem;
+  padding: 0.24rem 0.13333333rem 0 2.93333333rem;
+  position: relative;
+}
+.m_main .content .contentList .imgBox {
+  position: absolute;
+  top: 0.24rem;
+  left: 0.13333333rem;
+  width: 2.66666667rem;
+  height: 2.13333333rem;
+}
+.m_main .content .contentList .imgBox img {
+  width: 100%;
+  height: 100%;
+}
+.m_main .content .contentList .tit {
+  line-height: 0.56rem;
+  font-size: 0.32rem;
+  color: #000000;
+}
+.m_main .content .contentList .price {
+  margin-top: 0.24rem;
+  color: #000006;
+  font-size: 0.42666667rem;
+}
+.m_main .content .contentList .time {
+  position: absolute;
+  top: 2.93333333rem;
+  left: 2.93333333rem;
+  width: 6.13333333rem;
+  margin-top: 0.26666667rem;
+  color: #ef822d;
+  font-size: 0.29333333rem;
+}
+.m_main .meng {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  display: none;
+}
+.m_main .meng .mengList {
+  z-index: 1000;
+  overflow: hidden;
+  text-align: center;
+  line-height: 0.66666667rem;
+  width: 100%;
+  display: inline-block;
+  margin-top: 1.8rem;
+}
+.m_main .meng .mengList div {
+  display: inline-block;
+  vertical-align: middle;
+}
+.m_main .meng .mengList .prev,
+.m_main .meng .mengList .next {
+  width: 0.66666667rem;
+  height: 1.33333333rem;
+  padding-top: 0.33333333rem;
+  border-radius: 0.13333333rem;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.m_main .meng .mengList .prev div,
+.m_main .meng .mengList .next div {
+  width: 100%;
+  height: 0.66666667rem;
+  background: url('../images/icon_bar.png') -2.61333333rem -0.26666667rem;
+  background-size: 5.86666667rem 3.52rem;
+}
+.m_main .meng .mengList .next {
+  transform: rotate(180deg);
+}
+.m_main .meng .mengList .imgBox {
+  width: 5rem;
+  height: 4rem;
+  background-color: #f99;
+}

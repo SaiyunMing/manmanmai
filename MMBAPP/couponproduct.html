@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./css/common01.css">
+    <link rel="stylesheet" href="./css/couponproduct.css">
+    <title>Document</title>
+    <script src="./lib/flexible/flexible.js"></script>
+</head>
+
+<body>
+     <!----------------顶部-------------->
+    <div class="m_header">
+        <div class="top">
+            <a href="coupon.html"  class="icon_left fa fa-angle-left"></a>
+            <span>优惠券</span>
+            <i class="icon_right">
+                <img src="images/header_app.png" alt="">
+            </i>
+        </div>
+    </div>
+
+    
+    <!-- ----------主体---------- -->
+
+    <div class="m_main">
+        <!-- 内容部分 -->
+        <div class="content">
+                <!-- 挖个坑 -->
+        </div>
+        <!-- 模态框 -->
+        <div class="meng">
+            <div class="mengList">
+                <div class="prev">
+                    <div></div>
+                </div>
+                <div class="imgBox">
+                    <a href=""></a>
+                </div>
+                <div class="next">
+                    <div></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    
+    <!----------------底部-------------->
+    <div class="m_footer">
+        <div class="top">
+            <div class="login"><a href="login.html">登录</a></div>
+            <div class="reg"><a href="reg.html">注册</a></div>
+            <div class="backTop"><a href="#">
+                <img src="./images/top.jpg" alt="">
+                <span>返回顶部</span></a>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>
+                <a href="#">手机APP下载</a>
+                <span>慢慢买手机版</span>
+                <span>--掌上比价平台</span>
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+
+    </div>
+
+
+    <!-- 内容模板 -->
+    <script type="text/html" id="contentTpl">
+        {{each result v i}}
+             <div class="contentList" data-index={{i}} id="{{i}}">
+                <div class="imgBox">
+                    {{#v.couponProductImg}}
+                </div>
+
+                <p class="tit">{{v.couponProductName}}</p>
+                <p class="price">
+                    {{v.couponProductPrice}}
+                </p>
+                <p class='time'>{{v.couponProductTime}}</p>
+            </div>
+        {{/each}}
+    </script>
+
+
+
+
+
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/Template/template-web.js"></script>
+    <script src="./js/couponproduct.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+@base:75rem;
+@titleColor:#ff841d;
+@borderColor:#c9c9c9;
+
+
+.m_main{
+
+    /*内容*/
+    a{
+        height: 257/@base;
+        width: 750/@base;
+        padding-left: 220/@base;
+        padding-right: 30/@base;
+        padding-top: 28/@base;
+        position: relative;
+        img{
+            width: 200/@base;
+            height: 200/@base;
+            position: absolute;
+            top: 28/@base;
+            left: 10/@base;
+        }
+        .caption{
+            line-height: 38/@base;
+            font-size: 28/@base;
+            span{
+                color: #ff841d;
+            }
+        }
+        .from{
+            width: 500/@base;
+            position: absolute;
+            bottom: 64/@base;
+            left: 220/@base;
+            color: #aeacae;
+            font-size: 22/@base;
+
+            .comments{
+                float: right;
+            }
+        }
+    }
+
+
+
+    /*分页*/
+     /*分页*/
+     .Pagination{
+        height: 92/@base;
+        width: 100%;
+        padding: 20/@base 17/@base 0;
+        position: relative;
+        button{
+            width: 164/@base;
+            height: 70/@base;
+            font-size: 26/@base;
+            border-radius: 10/@base;
+            border: none;
+        }
+        .page{
+            width: 154/@base;
+             height: 70/@base;
+             border: 2px solid @borderColor;
+             position: absolute;
+             top: 20/@base;
+             left: 320/@base;
+             padding-right: 36/@base;;
+             span{
+                display: block;
+               
+                 width: 115/@base;
+                 height: 66/@base;
+                 font-size: 26/@base;
+                 text-align: center;
+                 line-height:66/@base;
+                
+             }
+             i{
+                position: absolute;
+                 top: 0;
+                 right: 0;
+                 width: 36/@base;
+                 height: 66/@base;
+                 text-align: center;
+                 font-size: 26/@base;
+                 line-height: 66/@base;
+                 border-left: 2px solid @borderColor;
+             }
+        }
+    }   
+
+}

@@ -1,0 +1,22 @@
+.m_main {
+  padding: 0.24rem 1.06666667rem 0.73333333rem 1.06666667rem;
+  overflow: hidden;
+}
+.m_main .list {
+  height: 1.17333333rem;
+  line-height: 1.12rem;
+  padding: 0 0.21333333rem;
+  float: left;
+  border: 2px solid #b6b6b6;
+  margin: 0.06666667rem;
+}
+.m_main .list img {
+  width: 0.42666667rem;
+  height: 0.42666667rem;
+  background-color: #f99;
+  vertical-align: middle;
+}
+.m_main .list p {
+  vertical-align: middle;
+  font-size: 0.4rem;
+}

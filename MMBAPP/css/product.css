@@ -1,0 +1,154 @@
+.red {
+  color: #cd0000;
+}
+.m_main {
+  /*路径导航*/
+  /*商品详情*/
+  /*分割线*/
+  /*商品评论*/
+  /*商品评论*/
+}
+.m_main .nav {
+  width: 100%;
+  height: 1.04rem;
+  border-top: 2px solid #c9c9c9;
+  border-bottom: 2px solid #c9c9c9;
+  padding-left: 0.21333333rem;
+}
+.m_main .nav a {
+  display: block;
+  float: left;
+  height: 0.98666667rem;
+  line-height: 0.98666667rem;
+  font-size: 0.32rem;
+}
+.m_main .content p {
+  line-height: 0.61333333rem;
+  margin-top: 0.50666667rem;
+  margin-left: 0.50666667rem;
+  width: 8.97333333rem;
+  font-size: 0.42666667rem;
+  text-align: center;
+}
+.m_main .content .imgBox {
+  width: 4.53333333rem;
+  height: 4.53333333rem;
+}
+.m_main .content .imgBox img {
+  width: 100%;
+  height: 100%;
+  margin-left: 2.74666667rem;
+}
+.m_main .content .detail {
+  height: 0.90666667rem;
+  border-top: 2px solid #bd5538;
+  border-bottom: 2px solid #bd5538;
+}
+.m_main .content .detail :nth-child(2) {
+  border-left: 2px solid #bd5538;
+  border-right: 2px solid #bd5538;
+}
+.m_main .content .detail li {
+  width: 33.3%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  line-height: 0.85333333rem;
+  font-size: 0.34666667rem;
+  background-color: #ff9916;
+}
+.m_main .content .detail li a {
+  color: #fffae9;
+}
+.m_main .content table {
+  height: 1.2rem;
+  border-bottom: 2px solid #c9c9c9;
+  line-height: 1.2rem;
+  font-size: 0.4rem;
+  font-weight: 700;
+}
+.m_main .content table a {
+  text-align: left;
+}
+.m_main .content table a img {
+  margin-top: 0.44rem;
+  width: 0.45333333rem;
+  height: 0.45333333rem;
+}
+.m_main .content table td.p_pic a {
+  text-align: right;
+}
+.m_main .content table td.red {
+  text-align: right;
+}
+.m_main .content table td span {
+  width: 1.49333333rem;
+  height: 0.64rem;
+}
+.m_main .content .notice {
+  height: 1.52rem;
+  overflow: hidden;
+}
+.m_main .content .notice p {
+  margin-top: 0.26666667rem;
+  padding: 0 0.26666667rem;
+  font-size: 0.29333333rem;
+  line-height: 0.48rem;
+  color: #a5a5a5;
+}
+.m_main .line {
+  width: 10rem;
+  height: 0.10666667rem;
+  background-color: #676767;
+}
+.m_main .commentList .title {
+  width: 10rem;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  text-align: center;
+  background-color: #dbdbdb;
+  font-size: 0.32rem;
+  color: #191416;
+}
+.m_main .commentList .comment {
+  padding: 0.42666667rem 0.26666667rem 0.16rem;
+  border-bottom: 2px solid #d0d0d0;
+}
+.m_main .commentList .comment .user {
+  overflow: hidden;
+  line-height: 0.32rem;
+  font-size: 0.24rem;
+  color: #6c7072;
+}
+.m_main .commentList .comment .user span:first-child {
+  float: left;
+}
+.m_main .commentList .comment .user span:last-child {
+  float: right;
+}
+.m_main .commentList .comment .from {
+  text-align: right;
+  line-height: 0.53333333rem;
+  color: #6c7072;
+  font-size: 0.29333333rem;
+}
+.m_main .commentList .comment .comContent {
+  line-height: 0.53333333rem;
+  font-size: 0.29333333rem;
+}
+.m_main .seeMore {
+  height: 1.94666667rem;
+  width: 10rem;
+  overflow: hidden;
+}
+.m_main .seeMore a {
+  width: 9.57333333rem;
+  height: 0.88rem;
+  background-color: #e5e5e5;
+  margin-left: 0.21333333rem;
+  margin-top: 0.41333333rem;
+  border-radius: 0.06666667rem;
+  text-align: center;
+  line-height: 0.88rem;
+  font-size: 0.34666667rem;
+}
